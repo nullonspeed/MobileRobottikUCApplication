@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="fast-forward-button.jpg" />
+    <None Remove="Icons\fast-forward-button.jpg" />
+    <None Remove="Icons\stopbutton.jpg" />
+    <None Remove="stopbutton.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="fast-forward-button.jpg" />
+    <Resource Include="Icons\fast-forward-button.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\stopbutton.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="stopbutton.jpg" />
+  </ItemGroup>
+
+</Project>
